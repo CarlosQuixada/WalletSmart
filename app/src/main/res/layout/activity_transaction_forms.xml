@@ -79,7 +79,7 @@
             android:text="Receita"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/text_date_value" />
-
+            
         <RadioButton
             android:id="@+id/radio_despesa"
             android:layout_width="wrap_content"
