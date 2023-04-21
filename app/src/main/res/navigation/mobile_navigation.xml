@@ -3,23 +3,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_resume">
+
+    <fragment
+        android:id="@+id/nav_resume"
+        android:name="com.example.walletsmart.view.ResumeFragment"
+        android:label="@string/menu_resume"
+        tools:layout="@layout/fragment_resume" />
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.example.walletsmart.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:name="com.example.walletsmart.view.AllTransactionFragment"
+        android:label="@string/menu_all_transaction"
+        tools:layout="@layout/fragment_all_transaction" />
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="com.example.walletsmart.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:name="com.example.walletsmart.view.TransactionRevenueFragment"
+        android:label="@string/menu_transaction_revenue"
+        tools:layout="@layout/fragment_transaction_revenue" />
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="com.example.walletsmart.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:name="com.example.walletsmart.view.ExpenseFragment"
+        android:label="@string/menu_expenses"
+        tools:layout="@layout/fragment_expenses" />
 </navigation>
