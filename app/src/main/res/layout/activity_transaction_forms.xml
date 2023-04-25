@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    tools:context=".view.TransactionFormsActivity">
+    tools:context=".view.activity.TransactionFormsActivity">
 
     <TextView
         android:id="@+id/text_description"
@@ -64,13 +64,30 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text_date" />
 
-    <RadioGroup
-        android:id="@+id/radio_type"
-        android:layout_marginTop="8dp"
+    <TextView
+        android:id="@+id/text_account"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Conta:"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_date_value">
+        app:layout_constraintTop_toBottomOf="@id/text_date_value" />
+
+    <Spinner
+        android:id="@+id/spinner_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_account" />
+
+    <RadioGroup
+        android:id="@+id/radio_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinner_account">
 
         <RadioButton
             android:id="@+id/radio_receita"
@@ -78,8 +95,8 @@
             android:layout_height="wrap_content"
             android:text="Receita"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/text_date_value" />
-            
+            app:layout_constraintTop_toBottomOf="@id/spinner_account" />
+
         <RadioButton
             android:id="@+id/radio_despesa"
             android:layout_width="wrap_content"

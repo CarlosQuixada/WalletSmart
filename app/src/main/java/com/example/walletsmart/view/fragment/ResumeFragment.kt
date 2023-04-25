@@ -1,4 +1,4 @@
-package com.example.walletsmart.view
+package com.example.walletsmart.view.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater

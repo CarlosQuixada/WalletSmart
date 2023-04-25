@@ -19,7 +19,6 @@ interface TransactionDAO {
     @Delete
     fun delete(transaction: TransactionModel)
 
-
     @Query("SELECT * FROM `Transaction` WHERE id = :id")
     fun get(id: Int): TransactionModel
 

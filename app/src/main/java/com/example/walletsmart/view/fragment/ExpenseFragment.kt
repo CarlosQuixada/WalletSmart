@@ -1,4 +1,4 @@
-package com.example.walletsmart.view
+package com.example.walletsmart.view.fragment
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,6 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.walletsmart.constants.DataBaseConstants
 import com.example.walletsmart.databinding.FragmentExpensesBinding
+import com.example.walletsmart.view.activity.TransactionFormsActivity
 import com.example.walletsmart.view.adapter.TransactionsAdapter
 import com.example.walletsmart.view.listener.OnTransactionListener
 import com.example.walletsmart.viewmodel.TransactionViewModel

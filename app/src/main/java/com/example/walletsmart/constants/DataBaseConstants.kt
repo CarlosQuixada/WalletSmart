@@ -7,4 +7,9 @@ class DataBaseConstants private constructor() {
         const val TABLE_NAME = "Transaction"
     }
 
+    object ACCOUNT {
+        const val ID_NAME = "accountID"
+        const val TABLE_NAME = "Account"
+    }
+
 }
