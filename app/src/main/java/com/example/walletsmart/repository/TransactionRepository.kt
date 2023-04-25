@@ -4,7 +4,7 @@ import android.content.Context
 import com.example.walletsmart.model.TransactionModel
 
 class TransactionRepository(context: Context) {
-    private val transactionDataBase = TransactionDataBase.getDataBase(context).transactionDAO()
+    private val transactionDataBase = WalletDataBase.getDataBase(context).transactionDAO()
 
     fun insert(transaction: TransactionModel): Boolean {
         return transactionDataBase.insert(transaction) > 0
